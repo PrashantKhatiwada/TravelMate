@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMate</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://kit.fontawesome.com/97e88805f3.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>Travel</span>Mate</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#packages">Offers</a>
+        <a href="#services">Services</a>
+        <a href="#customers">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- header section ends -->
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Travel with us</h3>
+        <p><span class="typing">Let us be your travel partner</span></p>
+        <a href="#book" class="btn">Start tour</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+    <div class="book">
+        <h1>Book Now</h1>
+        <form class="book-form">
+            <div class="form-item">
+                <label for="fName">Destination: </label>
+                <input type="text" id="fName">
+            </div>
+            <div class="form-item">
+                <label for="checkin-date">Arrival Date: </label>
+                <input type="date" id="chekin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Return/leave Date: </label>
+                <input type="date" id="chekout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Seats: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="button" class="btn modal-btn submit" onclick="modal()" value="Book Now" id="bookRoom">
+            </div>
+        </form>
+    </div>
+   
+
+</section>
+
+<!-- book section ends -->
+
+<!-- Offers section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        Offers
+        </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/pokharaView.jpg" alt="Pokhara">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Pokhara </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $99.00 <span>$150.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/swayambhu.jpg" alt="Swayambhu">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Kathmandu</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $99.00 <span>$150.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/lumbini.jpg" alt="Lumbini">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Lumbini </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $99.00 <span>$150.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/syangja.jpg" alt="Syangja">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Syangja </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $99.00 <span>$150.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Offers section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        services
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Comfortable stay</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        
+        <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>Punctual</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-door-closed"></i>
+            <h3>Security</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-swimming-pool"></i>
+            <h3>Refreshment</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>All over Nepal</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+<section class="customers" id="customers">
+    <div class="sec-width">
+        <div class="title">
+            <h1>Reviews</h1>
+        </div>
+        <div class="customers-container">
+            <!-- single customer -->
+            <div class="customer">
+                <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>Great, Loved it</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                    eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                <img src="images/customer1.jpg" alt="customer image">
+                <span>Prabesh Bakhati, Nepal</span>
+            </div>
+            <!-- end of single customer -->
+            <!-- single customer -->
+            <div class="customer">
+                <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>Comfortable Travel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                    eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                <img src="images/customer2.jpg" alt="customer image">
+                <span>Raghav Dahal, Nepal</span>
+            </div>
+            <!-- end of single customer -->
+            <!-- single customer -->
+            <div class="customer">
+                <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                </div>
+                <h3>Awesome service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                    eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                <img src="images/customer3.jpg" alt="customer image">
+                <span>Prashant Khatiwada, Nepal</span>
+            </div>
+            <!-- end of single customer -->
+        </div>
+    </div>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        contact
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/pointing.png" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="full name">
+                <input type="email" placeholder="email address">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="phone number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message for us" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+
+
+<!-- footer section  -->
+<footer class="footer">
+    <div class="footer-container">
+        <div>
+            <h2>About Us </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus
+                provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+            <ul class="social-icons">
+                <li class="flex">
+                    <a href="https://www.twitter.com/khatiwadaprash"><i class="fa fa-twitter fa-2x"></i></a>
+                </li>
+                <li class="flex">
+                    <a href="https://www.facebook.com/PrashantKhatiwada7"><i class="fa fa-facebook fa-2x"></i></a>
+                </li>
+                <li class="flex">
+                    <a href="https://www.instagram.com/khatiwadaprashanta/"><i class="fa fa-instagram fa-2x"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Useful Links</h2>
+            <a href="#">Blog</a>
+            <a href="#">Rooms</a>
+            <a href="#">Subscription</a>
+            <a href="#">Gift Card</a>
+        </div>
+
+        <div>
+            <h2>Privacy</h2>
+            <a href="#">Career</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Services</a>
+        </div>
+
+        <div>
+            <h2>Have A Question</h2>
+            <div class="contact-item">
+                <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span>
+                    Manamaiju, Kathmandu
+                </span>
+            </div>
+            <div class="contact-item">
+                <span>
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+                <span>
+                    +977 9800000000
+                </span>
+            </div>
+            <div class="contact-item">
+                <span>
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span>
+                    pkhatiwada58@gmail.com
+                </span>
+            </div>
+        </div>
+    </div>
+   
+</footer>
+<h1 class="credit">Copyright&copy;<span> Prashant Khatiwada</span> | all rights reserved </h1>
+   
+    <!--footer ends-->
+
+</body>
+</html>
